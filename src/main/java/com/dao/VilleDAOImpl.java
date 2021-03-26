@@ -37,8 +37,8 @@ public class VilleDAOImpl implements VilleDAO {
 			resultat = statement.executeQuery("SELECT * FROM ville_france ;");
 			
 			while (resultat.next()) {
-				//Ville ville = new Ville(resultat.getString("Nom_Commune"));
-				Ville ville = new Ville();
+				Ville ville = new Ville(resultat.getString("Nom_Commune"));
+				//Ville ville = new Ville();
 				
 				//System.out.println(resultat.getString("Nom_Commune"));
 				listVille.add(ville);
