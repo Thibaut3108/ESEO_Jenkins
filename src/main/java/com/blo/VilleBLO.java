@@ -2,7 +2,10 @@ package com.blo;
 
 import java.util.ArrayList;
 
+import com.dto.Ville;
+
 public interface VilleBLO {
 
-	public ArrayList<String> getInfoVille();
+	public ArrayList<Ville> getInfoVille(String param) throws VilleException;
+
 }
