@@ -7,7 +7,7 @@ public class Ville {
 	private String Code_Commune_INSEE;
 	private String libelle_acheminement;
 	private float Latitude;
-	private float Longitude;
+	private float Longitude; 
 	// private Coordonnee coordonnee;
 
 	public Ville() {
