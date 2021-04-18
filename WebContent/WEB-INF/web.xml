@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+
+	<servlet>
+		<servlet-name>accueilController</servlet-name>
+		<servlet-class>com.servlets.accueilController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>accueilController</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>distanceController</servlet-name>
+		<servlet-class>com.servlets.distanceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>distanceController</servlet-name>
+		<url-pattern>/distance</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>listeVilleController</servlet-name>
+		<servlet-class>com.servlets.listeVilleController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listeVilleController</servlet-name>
+		<url-pattern>/listeVilles</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>modifierVilleController</servlet-name>
+		<servlet-class>com.servlets.modifierVilleController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>modifierVilleController</servlet-name>
+		<url-pattern>/ville</url-pattern>
+	</servlet-mapping>
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+
+</web-app>

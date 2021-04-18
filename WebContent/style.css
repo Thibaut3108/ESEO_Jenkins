@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+h1{
+text-align:center;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+td{
+padding: 10px;
+}
+th{
+padding: 7px;
+}
+input:hover, tr:hover{
+	border: 2px solid gray;
+}
+input{
+	margin-top: 100px;
+	padding: 7px;
+}
+
+.accueil{
+	margin-top : 100px;
+	text-align: center;
+}
+
+.distance{
+	margin-top : 100px;
+	text-align: center;
+}
